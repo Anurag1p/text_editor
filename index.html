@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+
+  
+ 
+     <input type="text" class="container" id="name"  placeholder="type here...."> 
+     <button class="clear" title="Clear" onclick="clearInput()"> ⟳</button>
+     <p>Color</p>
+
+
+    <div class="btn-main">
+       <button  onclick={redColor()}></button>
+       <button onclick={greenColor()}></button>
+       <button onclick={orangeColor()}></button>
+       <button onclick={indianredColor()}></button>
+       <button onclick={VioletColor()}></button>
+    </div>
+
+    <p>Font Size</p>
+ 
+    <div class="btn-size">
+       <button  onclick={sSize()}>Small</button>
+       <button onclick={mSize()}>Medium</button>
+       <button onclick={lSize()}>Large</button>
+       
+    </div>
+
+    <p>Font Family</p>
+
+
+    <div class="font-family">
+       <button  onclick={Family1()} style="font-family:verdana;">Verdana</button>
+       <button onclick={Family2()}>San-Serif</button>
+       <button onclick={Family3()}>Helvetica </button>
+       
+    </div>
+
+
+    <p>Font Style</p>
+
+
+    <div class="font-family">
+       <button  onclick={fontType1()} style="font-family:verdana;">Bold</button>
+       <button onclick={fontType2()}>Italic</button>
+       <button onclick={fontType3()}>Underline </button>
+       
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
